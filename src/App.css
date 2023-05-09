@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+   font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: rgb(15 23 42);
+}
+
+h1 {
+  margin: 32px 0;
+  color: rgb(241 245 249);
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: rgb(241 245 249);
+  opacity: 50%;
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .complete {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.TodoForm {
+  flex-direction: column;
+}
+
+.todo-btn {
+  margin-top: 1rem;
+}
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  color: rgb(241 245 249);
+  background-color: rgb(139 92 246);
+  padding: 12px;
+  width: 25.6%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.delete {
+  width: 50%;
+  height: 50%;
+  margin-right: 5px;
+  color: rgb(241 245 249);
+}
+
+.TodoForm {
+    width: 100%;
+    background-color: rgb(15 23 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* set flex-direction to row */
+  }
+  
+  .todo-input {
+    outline: none;
+    background: none;
+    border: 2px solid rgb(139 92 246);
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 300px;
+    color: #fff;
+  }
+  
+  .todo-input::placeholder {
+    color: #ffffff4d;
+  }
+  
+  .todo-btn {
+    background: rgb(139 92 246);
+    color: #fff;
+    border: none;
+    margin-top: 1.1%;
+    padding: 0.625rem;
+    cursor: pointer;
+  }
+  
